@@ -79,4 +79,7 @@ RUN yarn prisma generate && \
 RUN libreoffice --version && \
     libreoffice --headless --convert-to csv --outdir /tmp /app/test.xlsx || echo "Test file not found, but LibreOffice is installed"
 
+
+    # Define default command if none is passed
+CMD ["yarn", "start:prod"]
 # Command can be defined in docker-compose.yml

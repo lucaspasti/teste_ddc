@@ -20,7 +20,7 @@ async function bootstrap() {
   await app.startAllMicroservices()
 
   await app.listen(process.env.PORT_ADMIN || 4041, () => {
-    console.log('Hello World!!! CRM.', process.env.PORT_ADMIN || 4041)
+    console.log('Iniciado com sucesso. Porta:', process.env.PORT_ADMIN || 4041)
   })
 }
 bootstrap()

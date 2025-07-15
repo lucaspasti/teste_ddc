@@ -14,6 +14,7 @@ import { LargeTableModule } from './modules/large-table/module'
 import { PokemonModule } from './modules/pokemon/module'
 import { PostModule } from './modules/post/module'
 import { UserModule } from './modules/user/module'
+import { ProfileModule } from './modules/profile/module'
 @Module({
   controllers: [AppController],
   imports: [
@@ -22,7 +23,7 @@ import { UserModule } from './modules/user/module'
     ScheduleModule.forRoot(),
     PokemonModule,
     UserModule,
-    ProfileModulee,
+    ProfileModule,
     PostModule,
     CategoryModule,
     LargeTableModule,

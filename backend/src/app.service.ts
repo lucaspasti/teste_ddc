@@ -39,13 +39,20 @@ export class AppService {
         `✅ Analytics query completed. Returned ${Array.isArray(analyticsData) ? analyticsData.length : 0} records`,
       )
 
+      const serializedData = JSON.parse(
+        JSON.stringify(analyticsData, (_, value) =>
+          typeof value === 'bigint' ? value.toString() : value
+        ),
+      )
+      
       return {
         success: true,
         timestamp: new Date(),
-        recordCount: Array.isArray(analyticsData) ? analyticsData.length : 0,
-        data: analyticsData,
+        recordCount: serializedData.length,
+        data: serializedData,
         message: 'Simplified analytics data retrieved successfully',
       }
+      
     } catch (error) {
       console.error('❌ Error executing analytics query:', error)
 

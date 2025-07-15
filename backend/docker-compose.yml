@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh -c "yarn prisma generate && yarn build && yarn start:prod"
+    ports:
+      - "3000:3000"
+      - "5555:5555"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres123@db:5432/teste_backend_db?schema=workspace
+      NODE_ENV: development
+      PORT: 3000
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - backend-net
+
+  db:
+    container_name: teste-postgres-db
+    image: postgres:15-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: teste_backend_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - backend-net
+
+volumes:
+  postgres_data:
+
+networks:
+  backend-net:

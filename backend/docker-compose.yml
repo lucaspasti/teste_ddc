@@ -16,6 +16,8 @@ services:
       DATABASE_URL: postgresql://postgres:postgres123@db:5432/teste_backend_db?schema=workspace
       NODE_ENV: development
       PORT: 3000
+      JWT_SECRET_KEY: chave_teste_lucas
+
     volumes:
       - .:/app
       - /app/node_modules

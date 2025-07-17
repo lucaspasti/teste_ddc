@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
     return (
-        <nav className="w-full bg-black/80 text-white px-6 py-3 flex justify-between items-center shadow-md">
+        <nav className="w-full bg-black/80 text-white px-6 py-3 flex justify-between items-center shadow-md fixed top-0 z-50 backdrop-blur-md">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl">
                 <span className="text-[var(--ddc-red)] text-2xl">.</span>ddc
             </Link>

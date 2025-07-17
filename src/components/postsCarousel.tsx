@@ -7,6 +7,8 @@ import {
 } from "@/components/ui/carousel"
 import Link from "next/link"
 
+import 'animate.css';
+
 // Coloque os dados mock aqui (como acima)
 const posts = [
     {
@@ -64,9 +66,9 @@ const posts = [
 export default function PostsCarousel() {
     return (
         <>
-            <h1 className="text-6xl text-center text-white mb-2 font-bold">Posts Em Destaque</h1>
+            <h1 className="text-6xl text-center text-white mb-2 font-bold animate__animated animate__fadeInRight">Posts Em Destaque</h1>
             <div className="max-w-5xl mx-auto py-15 gap-20">
-                <Carousel className="w-full">
+                <Carousel className="w-full animate__animated animate__fadeInRight animate__delay-1s">
                     <CarouselContent>
                         {posts.map(post => (
                             <CarouselItem key={post.id}>

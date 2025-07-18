@@ -46,3 +46,5 @@ known_hosts.pub
 ./src/assets/upload/files/
 ./atachments/
 
+/node_modules
+/node_modules/**

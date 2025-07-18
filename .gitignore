@@ -1,50 +1,16 @@
-# compiled output
-/dist
-/node_modules
+# FRONT-END (Next.js)
+front/.next/
+front/node_modules/
+front/.turbo/
+front/.vercel/
+front/.env*
 
-# Logs
-logs
+# BACK-END (exemplo Node.js)
+back/node_modules/
+back/dist/
+back/.env*
+
+# Arquivos gerais
 *.log
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# OS
 .DS_Store
-
-# Tests
-/coverage
-/.nyc_output
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-/uploads
-.env
-.env_prod
-ecosystem.config.prod.js
-
-known_hosts
-
-known_hosts.pub
-
-./src/assets/upload/files/
-./atachments/
-
-.next/
-./next
+.cache/

@@ -8,7 +8,7 @@ const Navbar = () => {
             </Link>
             <div className="hidden md:flex gap-8 text-base font-medium">
                 <Link href="/">Início</Link>
-                <Link href="/login">Login</Link>
+                <Link href="/auth/signin">Login</Link>
             </div>
 
             <button className="md:hidden p-2" aria-label="Abrir menu">

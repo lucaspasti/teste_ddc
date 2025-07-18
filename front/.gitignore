@@ -48,3 +48,8 @@ known_hosts.pub
 
 /node_modules
 /node_modules/**
+
+/next
+/.next
+/.next/** */
+.next/

@@ -79,13 +79,6 @@ export class Service {
 
   get: MethodType<ExecutionDTOType<GetDTO, 'get'>, EntityResponse> = {
     rules: {
-      perm: async (data) => {
-        if ((await checkPermission({ prisma: this.prisma, token: data.tokenData, data: ['api-ler-post'] })).permitted) {
-          return data
-        }
-        data.error = { error: { forbidden: 'Sem permissão para o recurso' } }
-        return data
-      },
       validateDTOData: async (data) => {
         const validatedData = ZodValidationError.validate(GetDTO.zodSchema(), data.datap)
         if ('errors' in validatedData) {
@@ -96,7 +89,14 @@ export class Service {
       },
     },
     execution: async (data: ExecutionDTOType<GetDTO, 'get'>) => {
-      const where = {}
+      const canViewAll = (await checkPermission({ prisma: this.prisma, token: data.tokenData, data: ['api-ler-post'] }))
+        .permitted
+
+      const where: any = {}
+      if (!canViewAll) {
+        where.published = true
+      }
+
       const take = data.datap.take || 10
       const skip = data.datap.skip || 0
 

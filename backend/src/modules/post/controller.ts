@@ -5,6 +5,7 @@ import { genericCaller } from 'src/@shared/types/auth'
 import { CreateDTO, DeleteDTO, EntityResponse, GetDTO, UpdateDTO } from './entities/entity'
 import { moduleMetadata } from './moduleMetadata'
 import { Service } from './service'
+import { JwtOptionalAuthGuard } from 'src/@shared/guards/jwtOptionalAuth.guard'
 
 @Resolver()
 export class GraphQLController {
@@ -16,7 +17,7 @@ export class GraphQLController {
     return await genericCaller.bind(this)(context, data, method)
   }
 
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtOptionalAuthGuard)
   @Query(() => EntityResponse, { name: 'get' + moduleMetadata.name + 's' })
   async get(@Context() context: any, @Args('data') data: GetDTO, method = 'get'): Promise<EntityResponse> {
     return await genericCaller.bind(this)(context, data, method)

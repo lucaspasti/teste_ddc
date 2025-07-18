@@ -9,7 +9,6 @@ services:
     command: sh -c "yarn prisma generate && yarn build && yarn start:prod"
     ports:
       - "3000:3000"
-      - "5555:5555"
     depends_on:
       - db
     environment:

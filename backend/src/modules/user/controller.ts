@@ -5,12 +5,13 @@ import { genericCaller } from 'src/@shared/types/auth'
 import { CreateDTO, DeleteDTO, EntityResponse, GetDTO, UpdateDTO } from './entities/entity'
 import { moduleMetadata } from './moduleMetadata'
 import { Service } from './service'
+import { JwtOptionalAuthGuard } from 'src/@shared/guards/jwtOptionalAuth.guard'
 
 @Resolver()
 export class GraphQLController {
   constructor(private readonly service: Service) {}
 
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtOptionalAuthGuard)
   @Mutation(() => EntityResponse, { name: 'create' + moduleMetadata.name })
   async create(@Context() context: any, @Args('data') data: CreateDTO, method = 'create'): Promise<EntityResponse> {
     return await genericCaller.bind(this)(context, data, method)

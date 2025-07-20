@@ -20,12 +20,19 @@ export const GET_POSTS = gql`
 
 `;
 export const CREATE_USER_MUTATION = gql`
-  mutation createUser($input: CreateUserInput!) {
-    createUser(createUserInput: $input) {
-      id
+  mutation createUser($input: CreateUserDTO!) {
+    createUser(data: $input) {
+      data {
+        items {
+          id
+          name
+          email
+        }
+      }
     }
   }
 `;
+
 
 export const SIGN_IN_MUTATION = gql`
   mutation signIn($input: SignInInput!) {

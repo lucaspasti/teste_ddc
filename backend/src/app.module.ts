@@ -15,10 +15,15 @@ import { PokemonModule } from './modules/pokemon/module'
 import { PostModule } from './modules/post/module'
 import { UserModule } from './modules/user/module'
 import { ProfileModule } from './modules/profile/module'
+import { AuthModule } from './modules/auth/auth.module'
+
 @Module({
   controllers: [AppController],
   imports: [
-    ConfigModule.forRoot(),
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env',
+    }),
     DatabaseModule,
     ScheduleModule.forRoot(),
     PokemonModule,
@@ -28,6 +33,7 @@ import { ProfileModule } from './modules/profile/module'
     CategoryModule,
     LargeTableModule,
     NotificationModule,
+    AuthModule,
     ServeStaticModule.forRoot({
       rootPath: join('./src/static'),
       serveRoot: '/static',

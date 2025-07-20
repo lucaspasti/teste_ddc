@@ -31,6 +31,7 @@ model User {
   updatedAt DateTime @default(now())
   posts     Post[]
   profile   Profile?
+  password  String?
 
   @@schema("workspace")
 }

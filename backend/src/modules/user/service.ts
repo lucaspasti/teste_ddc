@@ -5,6 +5,8 @@ import { checkPermission } from 'src/@shared/utils'
 import { PrismaService } from 'src/infra/database/prisma.service'
 import { CreateDTO, DeleteDTO, EntityResponse, GetDTO, UpdateDTO } from './entities/entity'
 import { moduleMetadata } from './moduleMetadata'
+import * as argon2 from 'argon2'
+
 
 @Injectable()
 export class Service {
@@ -26,15 +28,6 @@ export class Service {
 
   create: MethodType<ExecutionDTOType<CreateDTO, 'create'>, EntityResponse> = {
     rules: {
-      perm: async (data) => {
-        if (
-          (await checkPermission({ prisma: this.prisma, token: data.tokenData, data: ['api-criar-user'] })).permitted
-        ) {
-          return data
-        }
-        data.error = { error: { forbidden: 'Sem permissão para o recurso' } }
-        return data
-      },
       validateDTOData: async (data) => {
         const validatedData = ZodValidationError.validate(CreateDTO.zodSchema(), data.datap)
         if ('errors' in validatedData) {
@@ -62,7 +55,15 @@ export class Service {
             },
           }
         }
+        
         return data
+      },
+      
+    hashPassword: async (data) => {
+        if (data.datap.password) {
+          data.datap.password = await argon2.hash(data.datap.password);
+        }
+        return data;
       },
     },
     execution: async (data: ExecutionDTOType<CreateDTO, 'create'>) => {

@@ -40,11 +40,9 @@ export class AppService {
       )
 
       const serializedData = JSON.parse(
-        JSON.stringify(analyticsData, (_, value) =>
-          typeof value === 'bigint' ? value.toString() : value
-        ),
+        JSON.stringify(analyticsData, (_, value) => (typeof value === 'bigint' ? value.toString() : value)),
       )
-      
+
       return {
         success: true,
         timestamp: new Date(),
@@ -52,7 +50,6 @@ export class AppService {
         data: serializedData,
         message: 'Simplified analytics data retrieved successfully',
       }
-      
     } catch (error) {
       console.error('❌ Error executing analytics query:', error)
 

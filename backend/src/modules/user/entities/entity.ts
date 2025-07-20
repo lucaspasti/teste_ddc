@@ -18,6 +18,10 @@ export class MainEntity {
   name?: string
   static nameZod = z.string().min(1).optional()
 
+  @Field(() => String)
+  password?: string
+  static passwordZod = z.string()
+
   @Field(() => Date)
   createdAt: Date
 
@@ -39,6 +43,10 @@ export class CreateDTO implements createDTODBType {
   @Field(() => String)
   email: string
   static emailZod = MainEntity.emailZod
+
+  @Field(() => String)
+  password?: string
+  static passwordZod = MainEntity.passwordZod 
 
   @Field(() => String, { nullable: true })
   name?: string
@@ -78,4 +86,3 @@ export class EntityResponse extends MainResponse {
   @Field(() => EntityPagination, { nullable: true })
   data?: EntityPagination
 }
- 

@@ -1,11 +1,11 @@
 import { Field, ID, InputType, ObjectType } from '@nestjs/graphql'
 import { Prisma } from '@prisma/client'
 import {
-    ConnectWhere,
-    GetEntityDTO,
-    MainResponse,
-    PaginationResponse,
-    createZodSchema,
+  ConnectWhere,
+  GetEntityDTO,
+  MainResponse,
+  PaginationResponse,
+  createZodSchema,
 } from 'src/@shared/graphql/types'
 import { z } from 'zod'
 import { createDTODBType, moduleMetadata, updateDTODBType } from '../moduleMetadata'

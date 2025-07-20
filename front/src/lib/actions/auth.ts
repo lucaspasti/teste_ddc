@@ -68,10 +68,11 @@ export async function signIn(
     user: {
       id: data.signIn.id,
       name: data.signIn.name,
-      avatar: data.signIn.avatar,
     },
     accessToken: data.signIn.accessToken,
   });
+
+
   revalidatePath("/");
   redirect("/");
 }

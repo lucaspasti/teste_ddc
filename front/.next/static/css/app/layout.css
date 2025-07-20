@@ -75,7 +75,8 @@
 @layer theme {
   :root, :host {
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-sky-100: oklch(95.1% 0.026 236.824);
+    --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
@@ -468,9 +469,6 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
-  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -521,17 +519,8 @@
   .border-input {
     border-color: var(--input);
   }
-  .bg-\[va\] {
-    background-color: va;
-  }
   .bg-\[var\(--ddc-red\)\] {
     background-color: var(--ddc-red);
-  }
-  .bg-\[var--ddc\] {
-    background-color: var--ddc;
-  }
-  .bg-\[var-\] {
-    background-color: var-;
   }
   .bg-background {
     background-color: var(--background);
@@ -553,9 +542,6 @@
   }
   .bg-secondary {
     background-color: var(--secondary);
-  }
-  .bg-slate-100 {
-    background-color: var(--color-slate-100);
   }
   .bg-transparent {
     background-color: transparent;
@@ -584,11 +570,8 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
-  .p-20 {
-    padding: calc(var(--spacing) * 20);
-  }
-  .p-290 {
-    padding: calc(var(--spacing) * 290);
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -705,6 +688,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .underline-offset-4 {
     text-underline-offset: 4px;
@@ -984,6 +970,11 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .md\:ml-auto {
+    @media (width >= 48rem) {
+      margin-left: auto;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -1012,6 +1003,16 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
     }
   }
   .md\:text-left {
@@ -1079,6 +1080,51 @@
   .\[\.border-t\]\:pt-6 {
     &:is(.border-t) {
       padding-top: calc(var(--spacing) * 6);
+    }
+  }
+  .\[\&\>a\]\:rounded-md {
+    &>a {
+      border-radius: calc(var(--radius) - 2px);
+    }
+  }
+  .\[\&\>a\]\:px-4 {
+    &>a {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .\[\&\>a\]\:py-1 {
+    &>a {
+      padding-block: calc(var(--spacing) * 1);
+    }
+  }
+  .\[\&\>a\]\:transition {
+    &>a {
+      transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
+  .\[\&\>a\]\:duration-200 {
+    &>a {
+      --tw-duration: 200ms;
+      transition-duration: 200ms;
+    }
+  }
+  .md\:\[\&\>a\]\:py-2 {
+    @media (width >= 48rem) {
+      &>a {
+        padding-block: calc(var(--spacing) * 2);
+      }
+    }
+  }
+  .\[\&\>a\:hover\]\:bg-sky-500 {
+    &>a:hover {
+      background-color: var(--color-sky-500);
+    }
+  }
+  .\[\&\>a\:hover\]\:text-sky-100 {
+    &>a:hover {
+      color: var(--color-sky-100);
     }
   }
 }
@@ -1406,6 +1452,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @keyframes pulse {
   50% {
     opacity: 0.5;
@@ -1459,6 +1509,7 @@
       --tw-backdrop-opacity: initial;
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
       --tw-animation-delay: 0s;
       --tw-animation-direction: normal;
       --tw-animation-duration: initial;

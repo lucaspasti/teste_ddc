@@ -102,4 +102,3 @@ export class EntityResponse extends MainResponse {
   @Field(() => EntityPagination, { nullable: true })
   data?: EntityPagination
 }
- 

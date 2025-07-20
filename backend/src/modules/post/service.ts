@@ -26,17 +26,9 @@ export class Service {
 
   create: MethodType<ExecutionDTOType<CreateDTO, 'create'>, EntityResponse> = {
     rules: {
-      perm: async (data) => {
-        if (
-          (await checkPermission({ prisma: this.prisma, token: data.tokenData, data: ['api-criar-post'] })).permitted
-        ) {
-          return data
-        }
-        data.error = { error: { forbidden: 'Sem permissão para o recurso' } }
-        return data
-      },
       validateDTOData: async (data) => {
         const validatedData = ZodValidationError.validate(CreateDTO.zodSchema(), data.datap)
+        console.log("Validated data:", validatedData);
         if ('errors' in validatedData) {
           data.error = { error: { errors: validatedData.errors } }
         }
@@ -45,6 +37,7 @@ export class Service {
       },
       checkAuthorExists: async (data) => {
         if (data.datap.author?.connect?.id) {
+          console.log("Checking author existence for ID:", data.datap.author.connect.id);
           const authorExists = await this.prisma.user.findUnique({
             where: { id: data.datap.author.connect.id },
           })
@@ -185,21 +178,15 @@ export class Service {
 
   delete: MethodType<ExecutionDTOType<DeleteDTO, 'delete'>, EntityResponse> = {
     rules: {
-      perm: async (data) => {
-        if (
-          (await checkPermission({ prisma: this.prisma, token: data.tokenData, data: ['api-deletar-post'] })).permitted
-        ) {
-          return data
-        }
-        data.error = { error: { forbidden: 'Sem permissão para o recurso' } }
-        return data
-      },
+      // Start of delete rules
       validateDTOData: async (data) => {
+        console.log("Entering delete rules.");
         const validatedData = ZodValidationError.validate(DeleteDTO.zodSchema(), data.datap)
         if ('errors' in validatedData) {
           data.error = { error: { errors: validatedData.errors } }
         }
         data.datap = validatedData as any
+        console.log(data.datap);
         return data
       },
       checkExists: async (data) => {

@@ -43,3 +43,58 @@ export const SIGN_IN_MUTATION = gql`
     }
   }
 `;
+
+
+export const CREATE_POST_MUTATION = gql`
+  mutation CreatePost($data: CreatePostDTO!) {
+    createPost(data: $data) {
+      data {
+        count
+        items {
+          id
+          title
+          content
+          published
+          authorId
+          createdAt
+          updatedAt
+        }
+      }
+      error {
+        internalServerError
+        forbidden
+        badRequest
+        unauthorized
+      }
+    }
+  }
+`;
+
+
+export const DELETE_POST_MUTATION = gql`
+  mutation DeletePost($data: DeletePostDTO!) {
+    deletePost(data: $data) {
+      data {
+        count
+        items {
+          id
+        }
+      }
+      error {
+        badRequest
+        forbidden
+        notFound
+        internalServerError
+        unauthorized
+        conflict
+        blocked
+        refreshSystemToken
+        errors {
+          message
+          code
+          path
+        }
+      }
+    }
+  }
+`;

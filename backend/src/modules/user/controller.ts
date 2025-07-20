@@ -23,7 +23,7 @@ export class GraphQLController {
     return await genericCaller.bind(this)(context, data, method)
   }
 
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtOptionalAuthGuard)
   @Mutation(() => EntityResponse, { name: 'update' + moduleMetadata.name })
   async update(@Context() context: any, @Args('data') data: UpdateDTO, method = 'update'): Promise<EntityResponse> {
     return await genericCaller.bind(this)(context, data, method)

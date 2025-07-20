@@ -1,0 +1,422 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input AndWhere {
+  field: String!
+  fieldType: String
+  valueBoolean: Boolean
+  valueBooleanArray: [Boolean!]
+  valueDate: DateTime
+  valueDateArray: [DateTime!]
+  valueDateRange: DateRange
+  valueDateRangeArray: [DateRange!]
+  valueInt: Float
+  valueIntArray: [Float!]
+  valueText: String
+  valueTextArray: [String!]
+}
+
+input AndWhereNot {
+  field: String!
+  fieldType: String
+  valueBoolean: Boolean
+  valueBooleanArray: [Boolean!]
+  valueDate: DateTime
+  valueDateArray: [DateTime!]
+  valueDateRange: DateRange
+  valueDateRangeArray: [DateRange!]
+  valueInt: Float
+  valueIntArray: [Float!]
+  valueText: String
+  valueTextArray: [String!]
+}
+
+type ApiResponse {
+  badRequest: String
+  blocked: String
+  conflict: String
+  errors: [ZodValidationError!]
+  forbidden: String
+  internalServerError: String
+  notFound: String
+  refreshSystemToken: String
+  unauthorized: String
+}
+
+type AuthPayload {
+  accessToken: String!
+  id: Float!
+  name: String!
+}
+
+type CategoryEntity {
+  createdAt: DateTime!
+  id: ID!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type CategoryPagination {
+  count: Float!
+  items: [CategoryEntity!]!
+}
+
+type CategoryResponse {
+  data: CategoryPagination
+  error: ApiResponse
+}
+
+input Connect {
+  id: ID!
+}
+
+input ConnectWhere {
+  connect: Connect!
+}
+
+input CreateCategoryDTO {
+  name: String!
+}
+
+input CreateLargeTableDTO {
+  details: String!
+  name: String!
+  timestamp: DateTime!
+  value: Float!
+}
+
+input CreatePokemonDTO {
+  ability: String!
+  image: String!
+  name: String!
+  type: String!
+}
+
+input CreatePostDTO {
+  author: ConnectWhere!
+  content: String
+  published: Boolean = false
+  title: String!
+}
+
+input CreateProfileDTO {
+  bio: String
+  user: ConnectWhere!
+}
+
+input CreateUserDTO {
+  email: String!
+  name: String
+  password: String!
+}
+
+input DateRange {
+  from: DateTime
+  to: DateTime
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input DeleteCategoryDTO {
+  id: ID!
+}
+
+input DeleteLargeTableDTO {
+  id: ID!
+}
+
+input DeletePokemonDTO {
+  id: ID!
+}
+
+input DeletePostDTO {
+  id: ID!
+}
+
+input DeleteProfileDTO {
+  id: ID!
+}
+
+input DeleteUserDTO {
+  id: ID!
+}
+
+input GetCategorysDTO {
+  andWhere: [AndWhere!]
+  andWhereNot: [AndWhereNot!]
+  orWhere: [OrWhere!]
+  orWhereNot: [OrWhereNot!]
+  orderBy: OrderBy
+  skip: Float
+  take: Float
+}
+
+input GetLargeTablesDTO {
+  andWhere: [AndWhere!]
+  andWhereNot: [AndWhereNot!]
+  orWhere: [OrWhere!]
+  orWhereNot: [OrWhereNot!]
+  orderBy: OrderBy
+  skip: Float
+  take: Float
+}
+
+input GetPokemonsDTO {
+  andWhere: [AndWhere!]
+  andWhereNot: [AndWhereNot!]
+  orWhere: [OrWhere!]
+  orWhereNot: [OrWhereNot!]
+  orderBy: OrderBy
+  skip: Float
+  take: Float
+}
+
+input GetPostsDTO {
+  andWhere: [AndWhere!]
+  andWhereNot: [AndWhereNot!]
+  orWhere: [OrWhere!]
+  orWhereNot: [OrWhereNot!]
+  orderBy: OrderBy
+  skip: Float
+  take: Float
+}
+
+input GetProfilesDTO {
+  andWhere: [AndWhere!]
+  andWhereNot: [AndWhereNot!]
+  orWhere: [OrWhere!]
+  orWhereNot: [OrWhereNot!]
+  orderBy: OrderBy
+  skip: Float
+  take: Float
+}
+
+input GetUsersDTO {
+  andWhere: [AndWhere!]
+  andWhereNot: [AndWhereNot!]
+  orWhere: [OrWhere!]
+  orWhereNot: [OrWhereNot!]
+  orderBy: OrderBy
+  skip: Float
+  take: Float
+}
+
+type LargeTableEntity {
+  createdAt: DateTime!
+  details: String!
+  id: ID!
+  name: String!
+  timestamp: DateTime!
+  updatedAt: DateTime!
+  value: Float!
+}
+
+type LargeTablePagination {
+  count: Float!
+  items: [LargeTableEntity!]!
+}
+
+type LargeTableResponse {
+  data: LargeTablePagination
+  error: ApiResponse
+}
+
+type Mutation {
+  createCategory(data: CreateCategoryDTO!): CategoryResponse!
+  createLargeTable(data: CreateLargeTableDTO!): LargeTableResponse!
+  createPokemon(data: CreatePokemonDTO!): PokemonResponse!
+  createPost(data: CreatePostDTO!): PostResponse!
+  createProfile(data: CreateProfileDTO!): ProfileResponse!
+  createUser(data: CreateUserDTO!): UserResponse!
+  deleteCategory(data: DeleteCategoryDTO!): CategoryResponse!
+  deleteLargeTable(data: DeleteLargeTableDTO!): LargeTableResponse!
+  deletePokemon(data: DeletePokemonDTO!): PokemonResponse!
+  deletePost(data: DeletePostDTO!): PostResponse!
+  deleteProfile(data: DeleteProfileDTO!): ProfileResponse!
+  deleteUser(data: DeleteUserDTO!): UserResponse!
+  signIn(signInInput: SignInInput!): AuthPayload!
+  updateCategory(data: UpdateCategoryDTO!): CategoryResponse!
+  updateLargeTable(data: UpdateLargeTableDTO!): LargeTableResponse!
+  updatePokemon(data: UpdatePokemonDTO!): PokemonResponse!
+  updatePost(data: UpdatePostDTO!): PostResponse!
+  updateProfile(data: UpdateProfileDTO!): ProfileResponse!
+  updateUser(data: UpdateUserDTO!): UserResponse!
+}
+
+input OrWhere {
+  field: String!
+  fieldType: String
+  valueBoolean: Boolean
+  valueBooleanArray: [Boolean!]
+  valueDate: DateTime
+  valueDateArray: [DateTime!]
+  valueDateRange: DateRange
+  valueDateRangeArray: [DateRange!]
+  valueInt: Float
+  valueIntArray: [Float!]
+  valueText: String
+  valueTextArray: [String!]
+}
+
+input OrWhereNot {
+  field: String!
+  fieldType: String
+  valueBoolean: Boolean
+  valueBooleanArray: [Boolean!]
+  valueDate: DateTime
+  valueDateArray: [DateTime!]
+  valueDateRange: DateRange
+  valueDateRangeArray: [DateRange!]
+  valueInt: Float
+  valueIntArray: [Float!]
+  valueText: String
+  valueTextArray: [String!]
+}
+
+input OrderBy {
+  field: String!
+  order: String!
+}
+
+type PokemonEntity {
+  ability: String!
+  createdAt: DateTime!
+  id: ID!
+  image: String!
+  name: String!
+  type: String!
+  updatedAt: DateTime!
+}
+
+type PokemonPagination {
+  count: Float!
+  items: [PokemonEntity!]!
+}
+
+type PokemonResponse {
+  data: PokemonPagination
+  error: ApiResponse
+}
+
+type PostEntity {
+  authorId: ID!
+  content: String
+  createdAt: DateTime!
+  id: ID!
+  published: Boolean!
+  title: String!
+  updatedAt: DateTime!
+}
+
+type PostPagination {
+  count: Float!
+  items: [PostEntity!]!
+}
+
+type PostResponse {
+  data: PostPagination
+  error: ApiResponse
+}
+
+type ProfileEntity {
+  bio: String
+  createdAt: DateTime!
+  id: ID!
+  updatedAt: DateTime!
+  userId: ID!
+}
+
+type ProfilePagination {
+  count: Float!
+  items: [ProfileEntity!]!
+}
+
+type ProfileResponse {
+  data: ProfilePagination
+  error: ApiResponse
+}
+
+type Query {
+  getCategorys(data: GetCategorysDTO!): CategoryResponse!
+  getLargeTables(data: GetLargeTablesDTO!): LargeTableResponse!
+  getPokemons(data: GetPokemonsDTO!): PokemonResponse!
+  getPosts(data: GetPostsDTO!): PostResponse!
+  getProfiles(data: GetProfilesDTO!): ProfileResponse!
+  getUsers(data: GetUsersDTO!): UserResponse!
+}
+
+input SignInInput {
+  email: String!
+  password: String!
+}
+
+input UpdateCategoryDTO {
+  id: ID!
+  name: String
+}
+
+input UpdateLargeTableDTO {
+  details: String
+  id: ID!
+  name: String
+  timestamp: DateTime
+  value: Float
+}
+
+input UpdatePokemonDTO {
+  ability: String
+  id: ID!
+  image: String
+  name: String
+  type: String
+}
+
+input UpdatePostDTO {
+  author: ConnectWhere
+  content: String
+  id: ID!
+  published: Boolean
+  title: String
+}
+
+input UpdateProfileDTO {
+  bio: String
+  id: ID!
+  user: ConnectWhere
+}
+
+input UpdateUserDTO {
+  email: String
+  id: ID!
+  name: String
+}
+
+type UserEntity {
+  createdAt: DateTime!
+  email: String!
+  id: ID!
+  name: String
+  password: String!
+  updatedAt: DateTime!
+}
+
+type UserPagination {
+  count: Float!
+  items: [UserEntity!]!
+}
+
+type UserResponse {
+  data: UserPagination
+  error: ApiResponse
+}
+
+type ZodValidationError {
+  code: String!
+  fatal: Boolean
+  message: String!
+  path: [String!]!
+}

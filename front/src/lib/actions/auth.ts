@@ -8,7 +8,7 @@ import { CREATE_USER_MUTATION, SIGN_IN_MUTATION } from "@/lib/queries";
 import { redirect } from "next/navigation";
 import { LoginFormSchema } from "@/lib/zodSchemas/loginFormSchema";
 import { revalidatePath } from "next/cache";
-import { createSession } from "@/lib/session";
+import { createSession, deleteSession } from "@/lib/session";
 export async function signUp(
   state: SignUpFormState,
   formData: FormData
@@ -75,4 +75,10 @@ export async function signIn(
 
   revalidatePath("/");
   redirect("/");
+}
+
+export async function signOut() {
+    await deleteSession();
+    window.location.reload();
+    redirect("/");
 }

@@ -199,7 +199,7 @@ export class GetEntityDTO {
 export class Connect {
   @Field(() => ID, { nullable: false })
   id: number
-  static idZod = z.number().int().positive().optional()
+  static idZod = z.coerce.number().int().positive().optional()
 
   static zodSchema = createZodSchema.bind(Connect)
 }

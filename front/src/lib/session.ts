@@ -4,8 +4,9 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
 export type SessionUser = {
-  id?: string;
+  id?: number;
   name?: string;
+  data?: string[];
 };
 
 export type Session = {
@@ -28,7 +29,7 @@ export async function createSession(payload: Session) {
 
   (await cookies()).set("session", session, {
     httpOnly: true,
-    secure: true,
+    secure: process.env.NODE_ENV === "production",
     expires: expiredAt,
     sameSite: "lax",
     path: "/",

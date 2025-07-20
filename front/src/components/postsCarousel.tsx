@@ -24,7 +24,7 @@ export default async function PostsCarousel() {
           <CarouselContent>
             {posts.map((post) => (
               <CarouselItem key={post.id}>
-                <Link href={`/posts/${post.id}`} className="block w-full h-full">
+                <Link href={`/posts/`} className="block w-full h-full">
                   <div className="p-6 bg-white rounded-lg shadow text-black h-full flex flex-col justify-center items-center cursor-pointer hover:bg-gray-100 transition">
                     <h3 className="font-bold text-2xl mb-2">{post.title}</h3>
                     <p className="mb-5 mt-5">{post.content}</p>

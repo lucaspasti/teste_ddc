@@ -22,6 +22,7 @@ export class JwtAuthGuard extends AuthGuard('jwt') implements CanActivate {
     }
 
     const tokenPayload = this.getTokenPayload(request)
+    console.log("JwtAuthGuard - tokenPayload:", tokenPayload);
     if (!tokenPayload) {
       throw new UnauthorizedException({ message: 'Invalid token' })
     }

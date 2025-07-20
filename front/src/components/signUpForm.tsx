@@ -40,7 +40,7 @@ const SignUpForm = () => {
       )}
 
       <div>
-        <Label className= 'mb-3' htmlFor="password">Password</Label>
+        <Label className= 'mb-3' htmlFor="password">Senha</Label>
         <Input
           id="password"
           name="password"
@@ -51,7 +51,7 @@ const SignUpForm = () => {
 
       {!!state?.errors?.password && (
         <div className="text-sm text-red-500">
-          <p>Password Must:</p>
+          <p>Senha precisa de:</p>
           <ul>
             {state.errors.password.map((err) => (
               <li key={err}>{err}</li>
@@ -59,7 +59,7 @@ const SignUpForm = () => {
           </ul>
         </div>
       )}
-      <SubmitButton className="bg-[var(--ddc-red)]">Sign Up</SubmitButton>
+      <SubmitButton className="bg-[var(--ddc-red)]">Cadastrar</SubmitButton>
     </form>
   );
 };

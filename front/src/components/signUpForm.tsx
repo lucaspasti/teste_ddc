@@ -9,16 +9,16 @@ import { useActionState } from "react";
 const SignUpForm = () => {
   const [state, action] = useActionState(signUp, undefined);
   return (
-    <form action={action} className="flex flex-col gap-2">
+    <form action={action} className="flex flex-col gap-5">
       {!!state?.message && (
         <p className="text-red-500 text-sm">{state.message}</p>
       )}
       <div>
-        <Label htmlFor="name">Name</Label>
+        <Label className= 'mb-3'  htmlFor="name">Nome</Label>
         <Input
           id="name"
           name="name"
-          placeholder="John Doe"
+          placeholder="Lucas Ferreira"
           defaultValue={state?.data?.name}
         />
       </div>
@@ -27,11 +27,11 @@ const SignUpForm = () => {
       )}
 
       <div>
-        <Label htmlFor="email">Email</Label>
+        <Label className= 'mb-3' htmlFor="email">Email</Label>
         <Input
           id="email"
           name="email"
-          placeholder="john@example.com"
+          placeholder="exemplo@exemplo.com"
           defaultValue={state?.data?.email}
         />
       </div>
@@ -40,7 +40,7 @@ const SignUpForm = () => {
       )}
 
       <div>
-        <Label htmlFor="password">Password</Label>
+        <Label className= 'mb-3' htmlFor="password">Password</Label>
         <Input
           id="password"
           name="password"
@@ -59,7 +59,7 @@ const SignUpForm = () => {
           </ul>
         </div>
       )}
-      <SubmitButton>Sign Up</SubmitButton>
+      <SubmitButton className="bg-[var(--ddc-red)]">Sign Up</SubmitButton>
     </form>
   );
 };

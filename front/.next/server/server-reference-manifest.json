@@ -5,10 +5,15 @@
         "app/auth/signin/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
+        },
+        "app/auth/signup/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
         }
       },
       "layer": {
-        "app/auth/signin/page": "action-browser"
+        "app/auth/signin/page": "action-browser",
+        "app/auth/signup/page": "action-browser"
       }
     },
     "60c19bf6be6880e9d563cdd0e28b3b73db97a28305": {
@@ -16,10 +21,15 @@
         "app/auth/signin/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
+        },
+        "app/auth/signup/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
         }
       },
       "layer": {
-        "app/auth/signin/page": "action-browser"
+        "app/auth/signin/page": "action-browser",
+        "app/auth/signup/page": "action-browser"
       }
     }
   },

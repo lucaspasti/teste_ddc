@@ -1,7 +1,7 @@
 {
-  "/posts/edit/[id]/page": "app/posts/edit/[id]/page.js",
   "/page": "app/page.js",
-  "/posts/page": "app/posts/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/posts/create/page": "app/posts/create/page.js"
+  "/dashboard/page": "app/dashboard/page.js",
+  "/posts/edit/[id]/page": "app/posts/edit/[id]/page.js",
+  "/posts/create/page": "app/posts/create/page.js",
+  "/posts/page": "app/posts/page.js"
 }

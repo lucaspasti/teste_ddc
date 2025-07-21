@@ -5,7 +5,7 @@
 -- Combines all tables with useful metrics and calculations
 -- =====================================================
 
-CREATE OR REPLACE VIEW workspace.simplified_analytics AS
+CREATE OR REPLACE MATERIALIZED VIEW workspace.simplified_analytics AS
 WITH 
 -- CTE 1: User Metrics
 user_metrics AS (

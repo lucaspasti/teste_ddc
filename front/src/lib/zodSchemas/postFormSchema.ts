@@ -12,7 +12,7 @@ export const PostSchema = z.object({
     .optional()
     .or(z.literal("").transform(() => undefined)),
 
-  authorId: z.number(),
+  authorId: z.number().optional(),
 
   published: z.boolean().optional().default(true),
 });

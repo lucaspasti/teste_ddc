@@ -4,15 +4,14 @@ import PaginationControls from "@/components/paginationControls";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import DeleteButton from "./deleteButton";
-import EditButton from "./editButton";
 
 interface CardProps{
     page?: number, 
     pageSize?: number,
-    id?: number
+    id?: number,
 }
 
-const PostsPageComponent = async ({ page = 1, pageSize = 10,id }:CardProps) => {
+const PostsPageComponent = async ({ page = 1, pageSize = 10,id}:CardProps) => {
     const { posts, totalPosts } = await fetchPosts({ page, pageSize });
     const hasNextPage = (page * pageSize) < totalPosts;
     const hasPrevPage = page > 1;
@@ -21,10 +20,10 @@ const PostsPageComponent = async ({ page = 1, pageSize = 10,id }:CardProps) => {
     <Card className="mt-20 w-5xl mx-auto">
             <div className="flex w-full justify-between items-center">
             <div className="flex-1 flex items-center justify-center">
-                <h1 className="text-2xl font-bold text-center">Página de Posts</h1>
+                <h1 className="text-5xl font-bold text-center">Página de Posts</h1>
             </div>
-            <Link href={`/posts/create/`} className="flex items-center ">
-                <Button className="text-white">
+            <Link href={`/posts/create/`} >
+                <Button className="text-white m-10 mx-20">
                 Novo Post
                 </Button>
             </Link>
@@ -44,7 +43,7 @@ const PostsPageComponent = async ({ page = 1, pageSize = 10,id }:CardProps) => {
                         </div>
                         {id === Number(post.authorId) && (
                         <div className="mt-4 flex flex-col justify-end items-end">
-                            <EditButton post={{ id: post.id }} />
+                            <Link className="hover:underline  "href={`/posts/edit/${post.id}`}>Editar</Link>
                             <DeleteButton post={{ id: post.id }} />
                         </div>
                         

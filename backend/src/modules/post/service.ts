@@ -124,16 +124,6 @@ export class Service {
 
   update: MethodType<ExecutionDTOType<UpdateDTO, 'update'>, EntityResponse> = {
     rules: {
-      perm: async (data) => {
-        if (
-          (await checkPermission({ prisma: this.prisma, token: data.tokenData, data: ['api-atualizar-post'] }))
-            .permitted
-        ) {
-          return data
-        }
-        data.error = { error: { forbidden: 'Sem permissão para o recurso' } }
-        return data
-      },
       validateDTOData: async (data) => {
         const validatedData = ZodValidationError.validate(UpdateDTO.zodSchema(), data.datap)
         if ('errors' in validatedData) {
@@ -178,7 +168,6 @@ export class Service {
 
   delete: MethodType<ExecutionDTOType<DeleteDTO, 'delete'>, EntityResponse> = {
     rules: {
-      // Start of delete rules
       validateDTOData: async (data) => {
         console.log("Entering delete rules.");
         const validatedData = ZodValidationError.validate(DeleteDTO.zodSchema(), data.datap)

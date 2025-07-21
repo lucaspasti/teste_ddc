@@ -98,3 +98,37 @@ export const DELETE_POST_MUTATION = gql`
     }
   }
 `;
+
+export const UPDATE_POST_MUTATION = gql`
+  mutation UpdatePost($data: UpdatePostDTO!) {
+    updatePost(data: $data) {
+      data {
+        count
+        items {
+          id
+          title
+          content
+          published
+          createdAt
+          updatedAt
+        }
+      }
+      error {
+        badRequest
+        forbidden
+        notFound
+        internalServerError
+        unauthorized
+        conflict
+        blocked
+        refreshSystemToken
+        errors {
+          message
+          code
+          path
+        }
+      }
+    }
+  }
+`;
+  

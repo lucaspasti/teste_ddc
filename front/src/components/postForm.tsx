@@ -3,7 +3,7 @@
 import SubmitButton from "@/components/submitButton";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { createPost, updatePost } from "@/lib/actions/postActions";
+import { createPost } from "@/lib/actions/postActions";
 import { useActionState } from "react";
 import { Card } from "./ui/card";
 import { Textarea } from "./ui/textarea";
@@ -20,9 +20,8 @@ interface PostFormProps {
 
 const PostForm = ({ authorId, post, onSuccess }: PostFormProps) => {
     const isEditing = !!post;
-    const actionFunction = isEditing ? updatePost : createPost;
 
-    const [state, action] = useActionState(actionFunction, undefined);
+    const [state, action] = useActionState(createPost, undefined);
 
     // Handle success callback
     if (state?.success && onSuccess) {
@@ -58,7 +57,7 @@ const PostForm = ({ authorId, post, onSuccess }: PostFormProps) => {
       <SubmitButton className="bg-[var(--ddc-red)]">{isEditing ? 'Atualizar' : 'Enviar'}</SubmitButton>
     </form>
     </Card>
-  );
+  );  
 };
 
 export default PostForm;

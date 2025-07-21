@@ -2,95 +2,225 @@
   "node": {
     "00003cb2aa5f0c483fe32993c8770f55479f203d89": {
       "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/posts/create/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Fapp%2Fposts%2Fcreate%2Fpage.tsx%22%2C%5B%7B%22id%22%3A%22006ffea247f8f0c5d5258a21a565bd7a8b0de46375%22%2C%22exportedName%22%3A%22default%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/posts/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
         "app/_not-found/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
-        },
-        "app/auth/signin/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
         }
       },
       "layer": {
-        "app/posts/create/page": "rsc",
         "app/posts/page": "rsc",
-        "app/_not-found/page": "rsc",
-        "app/auth/signin/page": "rsc",
-        "app/page": "rsc"
+        "app/page": "rsc",
+        "app/posts/create/page": "rsc",
+        "app/posts/edit/[id]/page": "rsc",
+        "app/_not-found/page": "rsc"
       }
     },
     "600d2186c0a0c0433db0cdccc8eaecb82f66936e9b": {
       "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/posts/create/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Fapp%2Fposts%2Fcreate%2Fpage.tsx%22%2C%5B%7B%22id%22%3A%22006ffea247f8f0c5d5258a21a565bd7a8b0de46375%22%2C%22exportedName%22%3A%22default%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/posts/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
         "app/_not-found/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
-        },
-        "app/auth/signin/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
         }
       },
       "layer": {
-        "app/posts/create/page": "rsc",
         "app/posts/page": "rsc",
-        "app/_not-found/page": "rsc",
-        "app/auth/signin/page": "rsc",
-        "app/page": "rsc"
+        "app/page": "rsc",
+        "app/posts/create/page": "rsc",
+        "app/posts/edit/[id]/page": "rsc",
+        "app/_not-found/page": "rsc"
       }
     },
     "60c19bf6be6880e9d563cdd0e28b3b73db97a28305": {
       "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/posts/create/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Fapp%2Fposts%2Fcreate%2Fpage.tsx%22%2C%5B%7B%22id%22%3A%22006ffea247f8f0c5d5258a21a565bd7a8b0de46375%22%2C%22exportedName%22%3A%22default%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/posts/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
         "app/_not-found/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
-        },
-        "app/auth/signin/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%5D&__client_imported__=!",
+        }
+      },
+      "layer": {
+        "app/posts/page": "rsc",
+        "app/page": "rsc",
+        "app/posts/create/page": "rsc",
+        "app/posts/edit/[id]/page": "rsc",
+        "app/_not-found/page": "rsc"
+      }
+    },
+    "40e6abccecf8a8a76ae6747458f0a4bb59b9c8d257": {
+      "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
         "app/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/posts/create/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
-        "app/posts/create/page": "rsc",
         "app/posts/page": "rsc",
-        "app/_not-found/page": "rsc",
-        "app/auth/signin/page": "rsc",
-        "app/page": "rsc"
+        "app/page": "rsc",
+        "app/posts/create/page": "action-browser",
+        "app/posts/edit/[id]/page": "rsc"
+      }
+    },
+    "603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d": {
+      "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/posts/create/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/posts/page": "rsc",
+        "app/page": "rsc",
+        "app/posts/create/page": "action-browser",
+        "app/posts/edit/[id]/page": "rsc"
+      }
+    },
+    "6054f3d913db2cb896eaaf1c89a6db61eadd8f876a": {
+      "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/posts/create/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/posts/page": "rsc",
+        "app/page": "rsc",
+        "app/posts/create/page": "action-browser",
+        "app/posts/edit/[id]/page": "rsc"
+      }
+    },
+    "7fc444d0079c9180429d388b5d1e145fad832621c1": {
+      "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/posts/create/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/posts/page": "rsc",
+        "app/page": "rsc",
+        "app/posts/create/page": "action-browser",
+        "app/posts/edit/[id]/page": "rsc"
+      }
+    },
+    "7fe883e0b10a0474639b94bbc817a6a23e31d28fd3": {
+      "workers": {
+        "app/posts/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/posts/create/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/posts/page": "rsc",
+        "app/page": "rsc",
+        "app/posts/create/page": "action-browser",
+        "app/posts/edit/[id]/page": "rsc"
       }
     },
     "006ffea247f8f0c5d5258a21a565bd7a8b0de46375": {
@@ -104,67 +234,15 @@
         "app/posts/create/page": "rsc"
       }
     },
-    "603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d": {
+    "4054f3d913db2cb896eaaf1c89a6db61eadd8f876a": {
       "workers": {
-        "app/posts/create/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/posts/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
+        "app/posts/edit/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%226054f3d913db2cb896eaaf1c89a6db61eadd8f876a%22%2C%22exportedName%22%3A%22updatePost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
-        "app/posts/create/page": "action-browser",
-        "app/posts/page": "rsc",
-        "app/page": "rsc"
-      }
-    },
-    "7fc444d0079c9180429d388b5d1e145fad832621c1": {
-      "workers": {
-        "app/posts/create/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/posts/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/posts/create/page": "action-browser",
-        "app/posts/page": "rsc",
-        "app/page": "rsc"
-      }
-    },
-    "40e6abccecf8a8a76ae6747458f0a4bb59b9c8d257": {
-      "workers": {
-        "app/posts/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/posts/create/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2Fauth.ts%22%2C%5B%7B%22id%22%3A%2200003cb2aa5f0c483fe32993c8770f55479f203d89%22%2C%22exportedName%22%3A%22signOut%22%7D%2C%7B%22id%22%3A%22600d2186c0a0c0433db0cdccc8eaecb82f66936e9b%22%2C%22exportedName%22%3A%22signUp%22%7D%2C%7B%22id%22%3A%2260c19bf6be6880e9d563cdd0e28b3b73db97a28305%22%2C%22exportedName%22%3A%22signIn%22%7D%5D%5D%2C%5B%22%2FUsers%2Flucaspastiferreira%2Fteste_ddc%2Ffront%2Fsrc%2Flib%2Factions%2FpostActions.ts%22%2C%5B%7B%22id%22%3A%2240e6abccecf8a8a76ae6747458f0a4bb59b9c8d257%22%2C%22exportedName%22%3A%22deletePost%22%7D%2C%7B%22id%22%3A%22603ba5577abe1fc16ca32c5c45e8be010bc8c4be8d%22%2C%22exportedName%22%3A%22createPost%22%7D%2C%7B%22id%22%3A%227fc444d0079c9180429d388b5d1e145fad832621c1%22%2C%22exportedName%22%3A%22fetchPosts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/posts/page": "rsc",
-        "app/posts/create/page": "action-browser",
-        "app/page": "rsc"
+        "app/posts/edit/[id]/page": "rsc"
       }
     }
   },

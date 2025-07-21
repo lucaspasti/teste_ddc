@@ -2,7 +2,7 @@
 'use server';
 
 import { authFetchGraphQL } from "@/lib/fetchGraphQL";
-import { CREATE_POST_MUTATION, DELETE_POST_MUTATION, GET_POSTS } from "@/lib/queries";
+import { CREATE_POST_MUTATION, DELETE_POST_MUTATION, GET_POSTS, UPDATE_POST_MUTATION } from "@/lib/queries";
 import { transformTakeSkip } from "@/lib/helpers";
 import { print } from "graphql";
 import { getSession } from "@/lib/session";
@@ -153,6 +153,68 @@ export async function deletePost(
     return {
       success: false,
       message: "Falha ao conectar com o servidor ou erro inesperado.",
+    };
+  }
+}
+
+export async function updatePost(
+  prevState: any,
+  formData: FormData
+): Promise<{ success: boolean; message: string; data?: any }> {
+  const session = await getSession();
+  const postId = formData.get("postId");
+
+  if (!session?.user?.id) {
+    return {
+      success: false,
+      message: "Você precisa estar logado para atualizar um post.",
+    };
+  }
+
+  const validatedFields = PostSchema.safeParse({
+    title: formData.get("title"),
+    content: formData.get("content"),
+  });
+
+  if (!validatedFields.success) {
+    return {
+      message: `Erro de validação: ${JSON.stringify(validatedFields.error.flatten().fieldErrors)}`,
+      success: false,
+      data: Object.fromEntries(formData.entries()),
+    };
+  }
+
+  try {
+    const result = await authFetchGraphQL(print(UPDATE_POST_MUTATION), {
+      data: { id: Number(postId), ...validatedFields.data },
+    });
+
+    if (result.errors || result.updatePost?.error) {
+      const gqlError = result.errors?.[0]?.message;
+      const customError = result.updatePost?.error; // corrigido aqui
+      const errorMessage =
+        gqlError ||
+        customError?.badRequest ||
+        customError?.forbidden ||
+        customError?.internalServerError ||
+        customError?.notFound ||
+        "Ocorreu um erro ao atualizar o post.";
+
+      return { success: false, message: errorMessage, data: validatedFields.data };
+    }
+
+    revalidatePath("/posts");
+
+    return {
+      success: true,
+      message: "Post atualizado com sucesso!",
+      data: result.updatePost?.data?.items?.[0],
+    };
+  } catch (error) {
+    console.error("Erro na ação updatePost:", error);
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : String(error),
     };
   }
 }

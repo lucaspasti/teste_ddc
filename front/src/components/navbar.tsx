@@ -13,8 +13,9 @@ const Navbar = async () => {
                 <div className="hidden md:flex gap-8 text-base font-medium">
                     <Link href="/">Início</Link>
                     <Link href="/posts">Posts</Link>
+                    <Link href="/dashboard">Dashboard</Link>
                     <form action={signOut}>
-                        <button type="submit">Logout</button>
+                        <button className="cursor-pointer" type="submit">Logout</button>
                     </form>
                 </div>
 
